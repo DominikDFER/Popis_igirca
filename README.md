@@ -11,7 +11,7 @@ Atributi: name - ime igrice,
 	  rewiev - kakve su povratne informacije o igrici
 	  PG_raiting - za koga je primjerena
 	  price - cijena
-	  singleplayer_multiplayer_or_both, - dali je samo singleplazer, multiplazer ili ima obje opcije
+	  singleplayer_multiplayer_or_both, - dali je samo singleplayer, multiplayer ili ima obje opcije
 	  time_to_complete - koliko vremena treba da se prođe priča neke igrice ako ju ona ima
 Licenca: CC BY-SA 3.0 - mogućnost kopiranja i slanja podataka na bilo kojoj platformi te mogućnost promijene podataka za bilo koju svrhu čak i komercijalnu
 Tema: popis igrica 
