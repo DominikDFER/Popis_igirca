@@ -13,8 +13,10 @@ Atributi: name - ime igrice,
 	  price - cijena
 	  singleplayer_multiplayer_or_both, - dali je samo singleplayer, multiplayer ili ima obje opcije
 	  time_to_complete - koliko vremena treba da se prođe priča neke igrice ako ju ona ima
-Licenca: CC BY-SA 3.0 - mogućnost kopiranja i slanja podataka na bilo kojoj platformi te mogućnost promijene podataka za bilo koju svrhu čak i komercijalnu
+Licenca: CC BY-NC-SA 4.0 -mogućnost kopiranja i slanja podataka na bilo kojoj platformi te mogućnost promijene podataka pod da navedemo odgovarajuću zaslugu link na licencu i naznačimo promjene.
+Mora se koristiti u nekomercijalne svrhe i ako se mijenja mora biti pod istom licencom kao i orginalni podaci.
+LINK: https://creativecommons.org/licenses/by-nc-sa/4.0/
 Tema: popis igrica 
-Datum objave: 2022-10-29
+Datum objave: 2022-10-31
 Kontaktni info: dd52976@fer.hr
 Izdavač: Dominik Damjanović
