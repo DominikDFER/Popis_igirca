@@ -1,0 +1,563 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+            "name",
+            "žanr",
+            "publisher",
+            "voice_chat",
+            "review",
+            "pg_rating",
+            "price",
+            "singleplayer_multiplayer_or_both",
+            "time_to_complete",
+            "Voice_Actors"
+        ],
+        "properties": {
+            "name": {
+                "type": "string",
+                "title": "The name Schema",
+                "examples": [
+                    "Red dead redemption 2",
+                    "Star Wars Battlefron 2",
+                    "League of Legends",
+                    "Dead by Daylight",
+                    "Grand Theft Auto 5",
+                    "Transistor",
+                    "Hades",
+                    "Dota 2",
+                    "The Legend of Zelda: Breath of the Wild",
+                    "World of Tanks"
+                ]
+            },
+            "žanr": {
+                "type": "string",
+                "title": "The žanr Schema",
+                "examples": [
+                    "Vestern",
+                    "Shooter",
+                    "MOBA",
+                    "Action",
+                    "RPG",
+                    "Action-adventure",
+                    "Vehicular combat"
+                ]
+            },
+            "publisher": {
+                "type": "string",
+                "title": "The publisher Schema",
+                "examples": [
+                    "Rockstar games",
+                    "Electronic Arts",
+                    "Riot Games",
+                    "Behaviour Interactive Inc.",
+                    "Rockstar Games",
+                    "Supergiant Games",
+                    "Valve",
+                    "Nitendo",
+                    "Wargaming"
+                ]
+            },
+            "voice_chat": {
+                "type": "string",
+                "title": "The voice_chat Schema",
+                "examples": [
+                    "yes",
+                    "no"
+                ]
+            },
+            "review": {
+                "type": "string",
+                "title": "The review Schema",
+                "examples": [
+                    "very positive",
+                    "positive",
+                    "overwhelmingly positive",
+                    "mostly positive"
+                ]
+            },
+            "pg_rating": {
+                "type": "integer",
+                "title": "The pg_rating Schema",
+                "examples": [
+                    0,
+                    16,
+                    10,
+                    18,
+                    12,
+                    7
+                ]
+            },
+            "price": {
+                "type": "integer",
+                "title": "The price Schema",
+                "examples": [
+                    60,
+                    40,
+                    0,
+                    24,
+                    17,
+                    21
+                ]
+            },
+            "singleplayer_multiplayer_or_both": {
+                "type": "string",
+                "title": "The singleplayer_multiplayer_or_both Schema",
+                "examples": [
+                    "both",
+                    "multiplayer",
+                    "singleplayer"
+                ]
+            },
+            "time_to_complete": {
+                "type": "integer",
+                "title": "The time_to_complete Schema",
+                "examples": [
+                    49,
+                    57,
+                    0,
+                    31,
+                    15,
+                    23,
+                    50
+                ]
+            },
+            "Voice_Actors": {
+                "type": "array",
+                "title": "The Voice_Actors Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "name",
+                        "surname"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "title": "The name Schema",
+                            "examples": [
+                                "Roger",
+                                "Benjamin Byron",
+                                "Janina",
+                                "Matthew",
+                                "JB",
+                                "Melissa",
+                                "Dylan",
+                                "Emelina ",
+                                "Ned",
+                                "Shawn"
+                            ]
+                        },
+                        "surname": {
+                            "type": "string",
+                            "title": "The surname Schema",
+                            "examples": [
+                                "Clark",
+                                "Davis",
+                                "Gavankar",
+                                "mercer",
+                                "Blanc",
+                                "Hutchison",
+                                "Kushner",
+                                " Mårtensson",
+                                "Luke",
+                                "Fonteno"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "name": "Roger",
+                        "surname": "Clark"
+                    },
+                    {
+                        "name": "Benjamin Byron",
+                        "surname": "Davis"
+                    },
+                    {
+                        "name": "Janina",
+                        "surname": "Gavankar"
+                    },
+                    {
+                        "name": "Matthew",
+                        "surname": "mercer"
+                    },
+                    {
+                        "name": "JB",
+                        "surname": "Blanc"
+                    },
+                    {
+                        "name": "Melissa",
+                        "surname": "Hutchison"
+                    },
+                    {
+                        "name": "Dylan",
+                        "surname": "Kushner"
+                    },
+                    {
+                        "name": "Emelina ",
+                        "surname": " Mårtensson"
+                    },
+                    {
+                        "name": "Ned",
+                        "surname": "Luke"
+                    },
+                    {
+                        "name": "Shawn",
+                        "surname": "Fonteno"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "name": "Roger",
+                        "surname": "Clark"
+                    }],
+                    [{
+                        "name": "Benjamin Byron",
+                        "surname": "Davis"
+                    }],
+                    [{
+                        "name": "Janina",
+                        "surname": "Gavankar"
+                    }],
+                    [{
+                        "name": "Matthew",
+                        "surname": "mercer"
+                    }],
+                    [{
+                        "name": "JB",
+                        "surname": "Blanc"
+                    }],
+                    [{
+                        "name": "Melissa",
+                        "surname": "Hutchison"
+                    }],
+                    [{
+                        "name": "Dylan",
+                        "surname": "Kushner"
+                    }],
+                    [{
+                        "name": "Emelina ",
+                        "surname": " Mårtensson"
+                    }],
+                    [{
+                        "name": "Ned",
+                        "surname": "Luke"
+                    }],
+                    [{
+                        "name": "Shawn",
+                        "surname": "Fonteno"
+                    }]
+                ]
+            }
+        },
+        "examples": [{
+            "name": "Red dead redemption 2",
+            "žanr": "Vestern",
+            "publisher": "Rockstar games",
+            "voice_chat": "yes",
+            "review": "very positive",
+            "pg_rating": 0,
+            "price": 60,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 49,
+            "Voice_Actors": [{
+                "name": "Roger",
+                "surname": "Clark"
+            }]
+        },
+        {
+            "name": "Star Wars Battlefron 2",
+            "žanr": "Shooter",
+            "publisher": "Electronic Arts",
+            "voice_chat": "yes",
+            "review": "very positive",
+            "pg_rating": 16,
+            "price": 40,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 57,
+            "Voice_Actors": [{
+                "name": "Benjamin Byron",
+                "surname": "Davis"
+            }]
+        },
+        {
+            "name": "League of Legends",
+            "žanr": "MOBA",
+            "publisher": "Riot Games",
+            "voice_chat": "yes",
+            "review": "positive",
+            "pg_rating": 10,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Janina",
+                "surname": "Gavankar"
+            }]
+        },
+        {
+            "name": "Dead by Daylight",
+            "žanr": "Action",
+            "publisher": "Behaviour Interactive Inc.",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 18,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "multiplayer",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Matthew",
+                "surname": "mercer"
+            }]
+        },
+        {
+            "name": "Grand Theft Auto 5",
+            "žanr": "Action",
+            "publisher": "Rockstar Games",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 18,
+            "price": 24,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 31,
+            "Voice_Actors": [{
+                "name": "JB",
+                "surname": "Blanc"
+            }]
+        },
+        {
+            "name": "Transistor",
+            "žanr": "Action",
+            "publisher": "Supergiant Games",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 12,
+            "price": 17,
+            "singleplayer_multiplayer_or_both": "singleplayer",
+            "time_to_complete": 15,
+            "Voice_Actors": [{
+                "name": "Melissa",
+                "surname": "Hutchison"
+            }]
+        },
+        {
+            "name": "Hades",
+            "žanr": "RPG",
+            "publisher": "Supergiant Games",
+            "voice_chat": "no",
+            "review": "overwhelmingly positive",
+            "pg_rating": 0,
+            "price": 21,
+            "singleplayer_multiplayer_or_both": "singleplayer",
+            "time_to_complete": 23,
+            "Voice_Actors": [{
+                "name": "Dylan",
+                "surname": "Kushner"
+            }]
+        },
+        {
+            "name": "Dota 2",
+            "žanr": "MOBA",
+            "publisher": "Valve",
+            "voice_chat": "no",
+            "review": "mostly positive",
+            "pg_rating": 0,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "multiplayer",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Emelina ",
+                "surname": " Mårtensson"
+            }]
+        },
+        {
+            "name": "The Legend of Zelda: Breath of the Wild",
+            "žanr": "Action-adventure",
+            "publisher": "Nitendo",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 10,
+            "price": 60,
+            "singleplayer_multiplayer_or_both": "singleplayer",
+            "time_to_complete": 50,
+            "Voice_Actors": [{
+                "name": "Ned",
+                "surname": "Luke"
+            }]
+        },
+        {
+            "name": "World of Tanks",
+            "žanr": "Vehicular combat",
+            "publisher": "Wargaming",
+            "voice_chat": "yes",
+            "review": "very positive",
+            "pg_rating": 7,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "multiplayer",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Shawn",
+                "surname": "Fonteno"
+            }]
+        }]
+    },
+    "examples": [
+        [{
+            "name": "Red dead redemption 2",
+            "žanr": "Vestern",
+            "publisher": "Rockstar games",
+            "voice_chat": "yes",
+            "review": "very positive",
+            "pg_rating": 0,
+            "price": 60,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 49,
+            "Voice_Actors": [{
+                "name": "Roger",
+                "surname": "Clark"
+            }]
+        },
+        {
+            "name": "Star Wars Battlefron 2",
+            "žanr": "Shooter",
+            "publisher": "Electronic Arts",
+            "voice_chat": "yes",
+            "review": "very positive",
+            "pg_rating": 16,
+            "price": 40,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 57,
+            "Voice_Actors": [{
+                "name": "Benjamin Byron",
+                "surname": "Davis"
+            }]
+        },
+        {
+            "name": "League of Legends",
+            "žanr": "MOBA",
+            "publisher": "Riot Games",
+            "voice_chat": "yes",
+            "review": "positive",
+            "pg_rating": 10,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Janina",
+                "surname": "Gavankar"
+            }]
+        },
+        {
+            "name": "Dead by Daylight",
+            "žanr": "Action",
+            "publisher": "Behaviour Interactive Inc.",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 18,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "multiplayer",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Matthew",
+                "surname": "mercer"
+            }]
+        },
+        {
+            "name": "Grand Theft Auto 5",
+            "žanr": "Action",
+            "publisher": "Rockstar Games",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 18,
+            "price": 24,
+            "singleplayer_multiplayer_or_both": "both",
+            "time_to_complete": 31,
+            "Voice_Actors": [{
+                "name": "JB",
+                "surname": "Blanc"
+            }]
+        },
+        {
+            "name": "Transistor",
+            "žanr": "Action",
+            "publisher": "Supergiant Games",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 12,
+            "price": 17,
+            "singleplayer_multiplayer_or_both": "singleplayer",
+            "time_to_complete": 15,
+            "Voice_Actors": [{
+                "name": "Melissa",
+                "surname": "Hutchison"
+            }]
+        },
+        {
+            "name": "Hades",
+            "žanr": "RPG",
+            "publisher": "Supergiant Games",
+            "voice_chat": "no",
+            "review": "overwhelmingly positive",
+            "pg_rating": 0,
+            "price": 21,
+            "singleplayer_multiplayer_or_both": "singleplayer",
+            "time_to_complete": 23,
+            "Voice_Actors": [{
+                "name": "Dylan",
+                "surname": "Kushner"
+            }]
+        },
+        {
+            "name": "Dota 2",
+            "žanr": "MOBA",
+            "publisher": "Valve",
+            "voice_chat": "no",
+            "review": "mostly positive",
+            "pg_rating": 0,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "multiplayer",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Emelina ",
+                "surname": " Mårtensson"
+            }]
+        },
+        {
+            "name": "The Legend of Zelda: Breath of the Wild",
+            "žanr": "Action-adventure",
+            "publisher": "Nitendo",
+            "voice_chat": "no",
+            "review": "very positive",
+            "pg_rating": 10,
+            "price": 60,
+            "singleplayer_multiplayer_or_both": "singleplayer",
+            "time_to_complete": 50,
+            "Voice_Actors": [{
+                "name": "Ned",
+                "surname": "Luke"
+            }]
+        },
+        {
+            "name": "World of Tanks",
+            "žanr": "Vehicular combat",
+            "publisher": "Wargaming",
+            "voice_chat": "yes",
+            "review": "very positive",
+            "pg_rating": 7,
+            "price": 0,
+            "singleplayer_multiplayer_or_both": "multiplayer",
+            "time_to_complete": 0,
+            "Voice_Actors": [{
+                "name": "Shawn",
+                "surname": "Fonteno"
+            }]
+        }]
+    ]
+}
