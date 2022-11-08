@@ -40,7 +40,7 @@ publisher - izdavač igrice
 
 ## Licenca
 
- [CC BY-NC-SA 4.0] url(https://creativecommons.org/licenses/by-nc-sa/4.0/) -mogućnost kopiranja i slanja podataka na bilo kojoj platformi te mogućnost promijene podataka pod da navedemo odgovarajuću zaslugu link na licencu i naznačimo promjene.
+ [CC BY-NC-SA 4.0] (https://creativecommons.org/licenses/by-nc-sa/4.0/) -mogućnost kopiranja i slanja podataka na bilo kojoj platformi te mogućnost promijene podataka pod da navedemo odgovarajuću zaslugu link na licencu i naznačimo promjene.
 Mora se koristiti u nekomercijalne svrhe i ako se mijenja mora biti pod istom licencom kao i orginalni podaci.
 
 ## Tema
