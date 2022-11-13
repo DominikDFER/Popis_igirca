@@ -1,0 +1,8 @@
+IzvorniKod/target/
+
+
+### VS Code ###
+.vscode/
+
+### node_modules ###
+IzvorniKod/Frontend/node_modules/
