@@ -1,8 +1,8 @@
-Popis_igrica/target/
+target/
 
 
 ### VS Code ###
 .vscode/
 
 ### node_modules ###
-Popis_igrica/node_modules/
+node_modules/
