@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatable</title>
+    <link rel="stylesheet" href="datatable.css">
+</head>
+<body>
+    <div>
+        <button id="button" > 
+           <a rel="datatable" href="index.html">
+              Index
+        </a>
+       </button>
+           </div>  
+           <br>
+           <br>
+    <div>
+        <select name="ddlContent" id="ddlContent" onchange="SelectedTextValue(this)">
+            <option value="Nothing">select</option>
+            <option value="1">wildcard</option>
+            <option value="2">name</option>
+            <option value="3">publisher</option>
+        </select>
+    <input type="text"  id="myinput" placeholder="input">   
+    <input type="button" value="Search" onclick="tableSearch()" />
+    <table id="table">
+      
+    </table>
+    <span> <input type="button" id="CSV" onclick="toCSV()">CSV</span>
+    <span> <input type="button" id="JSON" >JSON</span>
+    </div>
+<script type="text/javascript" src="filter.js"></script>
+<script type="text/javascript" src="exportJSON.js"></script>
+<script type="text/javascript" src="exportCSV.js"></script>
+<script type="text/javascript" src="db.js"></script>
+</body>
+</html>
