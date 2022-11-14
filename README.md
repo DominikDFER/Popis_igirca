@@ -8,7 +8,7 @@ Dominik Damjanović
 
 ## Verzija 
 
- 1.0.
+ 2.0.
 
 ## Jezici korišteni 
 
@@ -49,7 +49,7 @@ Mora se koristiti u nekomercijalne svrhe i ako se mijenja mora biti pod istom li
 
 ## Datum objave
 
- 2022-10-31
+ 2022-11-14
 
 ## Kontaktni info
 
