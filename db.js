@@ -1,3 +1,4 @@
+
 const{Client} = require('pg');
 const client = new Client({
     host: "localhost",
@@ -7,6 +8,7 @@ const client = new Client({
     database: "Igrice"
 });
 
+function test(){
 client.connect();
 
 client.query(`SELECT * from popis_igrica`,(err,res) =>{
@@ -44,3 +46,4 @@ function generateTableHead(table, data) {
   
   generateTable(document.querySelector("table"), tablica);
   generateTableHead(document.querySelector("table"), Object.keys(tablica[0])); 
+}
