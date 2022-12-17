@@ -53,7 +53,7 @@ const addIgrica =(req,res) => {
 
 pool.query(queries.checkId,[id],(error,results)=>{
     if(results.rows.length){
-        res.status(400).send("taj id vec postoji")
+        res.status(404).send("taj id vec postoji")
     }
 })
 
