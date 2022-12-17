@@ -11,4 +11,4 @@ app.get("/",(res,req) =>{
 
 app.use("/api/igrice",igriceRoutes);
 
-app.listen(port);
+app.listen(port ,() => console.log(`app listening on port ${port}`));
