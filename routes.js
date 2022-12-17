@@ -8,7 +8,7 @@ router.get("/:name", controller.getIgriceByName);
 router.get("/:review", controller.getIgriceByReview);
 router.post("/", controller.addIgrica);
 router.delete("/:id", controller.deleteIgrica);
-router,put("/:id",contol.upadteIgrica);
+router.put("/:id", controller.upadteIgrica);
 
 
 
