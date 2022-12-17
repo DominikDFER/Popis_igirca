@@ -13,7 +13,7 @@ const getIgriceById = (req,res) => {
 let isnum = /^\d+$/.test(testString);
             
 if(!isnum){
-  res.status(405).send("Id nesmije sadrzavati slova");
+  res.status(405).send("Id mora sadrzavati samo brojeve");
 } 
 else {
     const id = parseInt(req.params.id);
@@ -68,7 +68,7 @@ var testString = req.params.id;
 let isnum = /^\d+$/.test(testString);
             
 if(!isnum){
-  res.status(405).send("Id nesmije sadrzavati slova");
+  res.status(405).send("Id mora sadrzavati samo brojeve");
 } 
 else {
     const id = parseInt(req.params.id);
@@ -90,7 +90,7 @@ const upadteIgrica = (req,res)=>{
 let isnum = /^\d+$/.test(testString);
             
 if(!isnum){
-  res.status(405).send("Id nesmije sadrzavati slova");
+  res.status(405).send("Id mora sadrzavati samo brojeve");
 } 
 else {
     const id = parseInt(req.params.id);
