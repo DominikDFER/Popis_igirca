@@ -1,227 +1,215 @@
 {
-"openapi" : "3.0.3",
-"info":{
- "info" : "REST API",
- "version" : "1.1"
-},
-"contact" :{
- "name" : "Dominik",
- "url" : "https://github.com/DominikDFER",
- "email" : "dd52976@fer.hr"
-},
-"license" : {
- "name" : "CC BY-NC-SA 4.0",
- "url" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-},
-"paths" : {
-"api/igrice" : {
-"get": {
-"summary" : "Dohvatitit sve rersurse",
-"description": "Vraca grupu resursa",
-"produces" : [
-"aplication\json"
-],
-"responses" : {
- "200" : {
-"description" : "Fetch sucessfull"
-},
-"400" : {
-"description" : "error"
-}
-}
-}
-"post": {
-"summary" : "Azuriranje imena resursa",
-"description": "Azurira se ime resursa u bazi podataka",
-"produces" : [
-"aplication\json"
-],
-"responses" : {
- "200" : {
-"description" : "Ime igrice uspjesno azurirano"
-},
-"400" : {
-"description" : "error"
-},
-"404"{
-"description" : "nepostoji igrica s tim Id"
-},
-"405" : {
-"description" : "Id mora sadrzavati samo brojeve"
-}
-}
-}
-},
-"api/igrice/{id}" : {
-"get": {
-"summary" : "Dohvatitit resurs za zadani Id",
-"description": "Vraca samo jedan resurs",
-"produces" : [
-"aplication\json"
-],
-"parameters" : [
-{
-"name" : "id",
-"in" : "query",
-"decription" : "Id of the game",
-"required" : "true",
-"type" : "Integer",
-"format" : "int64"
-}
-],
-"responses" : {
- "200" : {
-"description" : "Fetch sucessfull"
-},
-"400" : {
-"description" : "error"
-},
-"405" : {
-"description" : "Id mora sadrzavati samo brojeve"
-}
-}
-},
+	"openapi": "3.0.3",
+	"info": {
+		"info": "REST API",
+		"version": "1.1"
+	},
+	"contact": {
+		"name": "Dominik",
+		"url": "https://github.com/DominikDFER",
+		"email": "dd52976@fer.hr"
+	},
+	"license": {
+		"name": "CC BY-NC-SA 4.0",
+		"url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+	},
+	"paths": {
+		"api/v1/igrice": {
+			"get": {
+				"summary": "Dohvatitit sve rersurse",
+				"description": "Vraca grupu resursa",
+				"produces": [
+					"aplication/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Fetch sucessfull"
+					},
+					"400": {
+						"description": "error"
+					}
+				}
+			},
+			"post": {
+				"summary": "Azuriranje imena resursa",
+				"description": "Azurira se ime resursa u bazi podataka",
+				"produces": [
+					"aplication/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ime igrice uspjesno azurirano"
+					},
+					"400": {
+						"description": "error"
+					},
+					"404": {
+						"description": "nepostoji igrica s tim Id"
+					},
+					"405": {
+						"description": "Id mora sadrzavati samo brojeve"
+					}
+				}
+			}
+		},
+		"api/igrice/{id}": {
+			"get": {
+				"summary": "Dohvatitit resurs za zadani Id",
+				"description": "Vraca samo jedan resurs",
+				"produces": [
+					"aplication/json"
+				],
+				"parameters": [{
+					"name": "id",
+					"in": "query",
+					"decription": "Id of the game",
+					"required": "true",
+					"type": "Integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "Fetch sucessfull"
+					},
+					"400": {
+						"description": "error"
+					},
+					"405": {
+						"description": "Id mora sadrzavati samo brojeve"
+					}
+				}
+			},
 
-"delete": {
-"summary" : "Obrisati resurs za zadani Id",
-"description": "Obrisuje resurs za zadani Id",
-"produces" : [
-"aplication\json"
-],
-"parameters" : [
-{
-"name" : "id",
-"in" : "query",
-"decription" : "Id of the game",
-"required" : "true",
-"type" : "Integer",
-"format" : "int64"
-}
-],
-"responses" : {
- "200" : {
-"description" : "Igrica uspjesno obrisana"
-},
-"400" : {
-"description" : "error"
-},
-"404"{
-"description" : "nepostoji igrica s tim Id"
-},
-"405" : {
-"description" : "Id mora sadrzavati samo brojeve"
-}
-}
-},
-"put": {
-"summary" : "Dodati resurs",
-"description": "Dodaje resurs u bazu podataka",
-"produces" : [
-"aplication\json"
-],
-"parameters" : [
-{
-"name" : "id",
-"in" : "query",
-"decription" : "Id of the game",
-"required" : "true",
-"type" : "Integer",
-"format" : "int64"
-}
-],
-"responses" : {
- "201" : {
-"description" : "Igrica uspjesno dodana"
-},
-"400" : {
-"description" : "error"
-},
-"404"{
-"description" : "taj id vec postoji"
-},
-"405" : {
-"description" : "Id mora sadrzavati samo brojeve"
-}
-}
-}
-},
-"api/igrice/{publisher}" : {
-"get": {
-"summary" : "Dohvatitit sve rersurse",
-"description": "Vraca grupu resursa",
-"produces" : [
-"aplication\json"
-],
-"parameters" : [
-{
-"name" : "publisher",
-"in" : "query",
-"decription" : "Publisher of the game",
-"required" : "true",
-"type" : "String"
-}
-],
-"responses" : {
- "200" : {
-"description" : "Fetch sucessfull"
-},
-"400" : {
-"description" : "error"
-}
-}
-}
-},
-"api/igrice/{name}" : {
-"get": {
-"summary" : "Dohvatitit sve rersurse",
-"description": "Vraca grupu resursa",
-"produces" : [
-"aplication\json"
-],
-"parameters" : [
-{
-"name" : "name",
-"in" : "query",
-"decription" : "Name of the game",
-"required" : "true",
-"type" : "String"
-}
-],
-"responses" : {
- "200" : {
-"description" : "Fetch sucessfull"
-},
-"400" : {
-"description" : "error"
-}
-}
-}
-},
-"api/igrice/{review}" : {
-"get": {
-"summary" : "Dohvatitit sve rersurse",
-"description": "Vraca grupu resursa",
-"produces" : [
-"aplication\json"
-],
-"parameters" : [
-{
-"name" : "review",
-"in" : "query",
-"decription" : "Review of the game",
-"required" : "true",
-"type" : "String"
-}
-],
-"responses" : {
- "200" : {
-"description" : "Fetch sucessfull"
-},
-"400" : {
-"description" : "error"
-}
-}
-}
-}
-}
+			"delete": {
+				"summary": "Obrisati resurs za zadani Id",
+				"description": "Obrisuje resurs za zadani Id",
+				"produces": [
+					"aplication/json"
+				],
+				"parameters": [{
+					"name": "id",
+					"in": "query",
+					"decription": "Id of the game",
+					"required": "true",
+					"type": "Integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "Igrica uspjesno obrisana"
+					},
+					"400": {
+						"description": "error"
+					},
+					"404": {
+						"description": "nepostoji igrica s tim Id"
+					},
+					"405": {
+						"description": "Id mora sadrzavati samo brojeve"
+					}
+				}
+			},
+			"put": {
+				"summary": "Dodati resurs",
+				"description": "Dodaje resurs u bazu podataka",
+				"produces": [
+					"aplication/json"
+				],
+				"parameters": [{
+					"name": "id",
+					"in": "query",
+					"decription": "Id of the game",
+					"required": "true",
+					"type": "Integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"201": {
+						"description": "Igrica uspjesno dodana"
+					},
+					"400": {
+						"description": "error"
+					},
+					"404": {
+						"description": "taj id vec postoji"
+					},
+					"405": {
+						"description": "Id mora sadrzavati samo brojeve"
+					}
+				}
+			}
+		}
+	},
+	"api/v2/igrice/{publisher}": {
+		"get": {
+			"summary": "Dohvatitit sve rersurse",
+			"description": "Vraca grupu resursa",
+			"produces": [
+				"aplication/json"
+			],
+			"parameters": [{
+				"name": "publisher",
+				"in": "query",
+				"decription": "Publisher of the game",
+				"required": "true",
+				"type": "String"
+			}],
+			"responses": {
+				"200": {
+					"description": "Fetch sucessfull"
+				},
+				"400": {
+					"description": "error"
+				}
+			}
+		}
+	},
+	"api/v4/igrice/{name}": {
+		"get": {
+			"summary": "Dohvatitit sve rersurse",
+			"description": "Vraca grupu resursa",
+			"produces": [
+				"aplication/json"
+			],
+			"parameters": [{
+				"name": "name",
+				"in": "query",
+				"decription": "Name of the game",
+				"required": "true",
+				"type": "String"
+			}],
+			"responses": {
+				"200": {
+					"description": "Fetch sucessfull"
+				},
+				"400": {
+					"description": "error"
+				}
+			}
+		}
+	},
+	"api/v4/igrice/{review}": {
+		"get": {
+			"summary": "Dohvatitit sve rersurse",
+			"description": "Vraca grupu resursa",
+			"produces": [
+				"aplication/json"
+			],
+			"parameters": [{
+				"name": "review",
+				"in": "query",
+				"decription": "Review of the game",
+				"required": "true",
+				"type": "String"
+			}],
+			"responses": {
+				"200": {
+					"description": "Fetch sucessfull"
+				},
+				"400": {
+					"description": "error"
+				}
+			}
+		}
+	}
 }
