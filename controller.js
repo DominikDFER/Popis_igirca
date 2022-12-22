@@ -49,7 +49,7 @@ const getIgriceByReview = (req,res) => {
 }
 
 const addIgrica =(req,res) => {
- const {id,name, žanr, publisher, voice_chat, review, pg_raiting, price, singleplayer_multiplayer_or_both, time_to_complete } = req.body;
+ const {id,name, žanr, publisher, voice_chat, year_of_release, review, pg_raiting, price, singleplayer_multiplayer_or_both, time_to_complete } = req.body;
 
 pool.query(queries.checkId,[id],(error,results)=>{
     if(results.rows.length){
@@ -57,7 +57,7 @@ pool.query(queries.checkId,[id],(error,results)=>{
     }
 })
 
- pool.query(queries.addIgrica,[id,name, žanr, publisher, voice_chat, review, pg_raiting, price, singleplayer_multiplayer_or_both, time_to_complete], (error, results)=>{
+ pool.query(queries.addIgrica,[id,name, žanr, publisher, voice_chat, year_of_release, review, pg_raiting, price, singleplayer_multiplayer_or_both, time_to_complete], (error, results)=>{
      if(error) res.status(400).send("error");
     res.status(201).send("igrica uspjesno dodana");
  })
