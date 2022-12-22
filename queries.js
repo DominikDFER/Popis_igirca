@@ -12,5 +12,5 @@ module.exports ={
     getIgrice, getIgriceById,
     getIgriceByPublisher,getIgriceByName,
     getIgriceByReview, addIgrica, checkId,
-    deleteIgrica, updateIgrica
+    deleteIgrica, updateIgrica,
 }
