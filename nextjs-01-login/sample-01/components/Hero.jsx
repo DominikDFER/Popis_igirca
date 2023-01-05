@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datatable</title>
-    <link rel="stylesheet" href="datatable.css">
-</head>
-<body>
-    <div>
+import React from 'react';
+
+const Hero = () => (
+  <div className="hero my-5 text-center" data-testid="hero">
         <button id="button" > 
            <a rel="datatable" href="index.html">
               Index
         </a>
        </button>
-       <table class="table table-bordered table-hover table-condensed">
+       <table class="table table-bordered table-hover table-condensed" >
         <thead><tr><th title="Field #1">name</th>
         <th title="Field #2">žanr</th>
         <th title="Field #3">publisher</th>
@@ -158,8 +151,8 @@
         <td>Fonteno</td>
         </tr>
         </tbody></table>
-           <br>
-           <br>
+           <br/>
+           <br/>
     <div>
         <select name="ddlContent" id="ddlContent" onchange="SelectedTextValue(this)">
             <option value="Nothing">select</option>
@@ -167,17 +160,17 @@
             <option value="2">name</option>
             <option value="3">publisher</option>
         </select>
-    <input type="text"  id="myinput" placeholder="input">   
+    <input type="text"  id="myinput" placeholder="input"/>   
     <input type="button" value="Search" onclick="tableSearch()" />
     <table id="table">
       
     </table>
-    <span> <input type="button" id="CSV" onclick="toCSV()">CSV</span>
-    <span> <input type="button" id="JSON" >JSON</span>
     </div>
 <script  src="filter.js"></script>
 <script  src="exportJSON.js"></script>
 <script  src="exportCSV.js"></script>
 <script  src="db.js"></script>
-</body>
-</html>
+  </div>
+);
+
+export default Hero;
