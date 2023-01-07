@@ -49,7 +49,7 @@ const getIgriceByName = (req,res) => {
           };
         const compacted = await jsonld.compact(doc, context);
         console.log(JSON.stringify(compacted, null, 2));
-        res.status(200).json(results.rows);
+        res.status(200).json(JSON.stringify(compacted)+JSON.stringify(results.rows));
     })
 }
 
@@ -67,7 +67,7 @@ const getIgriceByReview = (req,res) => {
           };
         const compacted = await jsonld.compact(doc, context);
         console.log(JSON.stringify(compacted, null, 2));
-        res.status(200).json(results.rows);
+        res.status(200).json(JSON.stringify(compacted)+JSON.stringify(results.rows));
     })
 }
 
