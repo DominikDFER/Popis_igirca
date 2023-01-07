@@ -36,17 +36,35 @@ const getIgriceByPublisher = (req,res) => {
 
 const getIgriceByName = (req,res) => {
     const name = req.params.name;
-    pool.query(queries.getIgriceByName, [name], (error,results) => {
+    pool.query(queries.getIgriceByName, [name], async (error,results) => {
         if(error) res.status(400).send("error");
-        res.status(200).json(results.rows);
+        const doc = {
+            "http://schema.org/head": {"@id": "http://schema.org/Igrice"},
+            "http://schema.org/name": {"@id": "http://schema.org/name"}    
+          };
+          const context = {
+            "homepage": {"@id": "http://schema.org/head", "@type": "@id"},
+            "name": {"@id": "http://schema.org/name", "@type": "@id"}
+          };
+        const compacted = await jsonld.compact(doc, context);
+        res.status(200).json(JSON.stringify(compacted, null, 2).concat(" ",results.rows));
     })
 }
 
 const getIgriceByReview = (req,res) => {
     const review = req.params.review;
-    pool.query(queries.getIgriceByReview, [review], (error,results) => {
+    pool.query(queries.getIgriceByReview, [review], async (error,results) => {
         if(error) res.status(400).send("error");
-        res.status(200).json(results.rows);
+        const doc = {
+            "http://schema.org/head": {"@id": "http://schema.org/Igrice"},
+            "http://schema.org/review": {"@id": "http://schema.org/review"}    
+          };
+          const context = {
+            "homepage": {"@id": "http://schema.org/head", "@type": "@id"},
+            "name": {"@id": "http://schema.org/review", "@type": "@id"}
+          };
+        const compacted = await jsonld.compact(doc, context);
+        res.status(200).json(JSON.stringify(compacted, null, 2).concat(" ",results.rows));
     })
 }
 
