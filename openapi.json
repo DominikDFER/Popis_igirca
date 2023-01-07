@@ -179,7 +179,20 @@
 				"type": "String"
 			}],
 			"responses": {
-				"200": {
+				"200": {{
+  "@context": {
+    "homepage": {
+      "@id": "http://schema.org/head",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "http://schema.org/name",
+      "@type": "@id"
+    }
+  },
+  "homepage": "http://schema.org/Igrice",
+  "name": "http://schema.org/name"
+}
 					"description": "Fetch sucessfull"
 				},
 				"400": {
@@ -203,7 +216,20 @@
 				"type": "String"
 			}],
 			"responses": {
-				"200": {
+				"200": {{
+  "@context": {
+    "homepage": {
+      "@id": "http://schema.org/head",
+      "@type": "@id"
+    },
+    "review": {
+      "@id": "http://schema.org/review",
+      "@type": "@id"
+    }
+  },
+  "homepage": "http://schema.org/Igrice",
+  "review": "http://schema.org/review"
+}
 					"description": "Fetch sucessfull"
 				},
 				"400": {

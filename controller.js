@@ -1,5 +1,6 @@
 const pool = require("./db");
 const queries = require('./queries');
+const jsonld = require('jsonld');
 
 const getIgrice  = (req,res) => {
    pool.query(queries.getIgrice ,(error,results)=>{
@@ -47,7 +48,8 @@ const getIgriceByName = (req,res) => {
             "name": {"@id": "http://schema.org/name", "@type": "@id"}
           };
         const compacted = await jsonld.compact(doc, context);
-        res.status(200).json(JSON.stringify(compacted, null, 2).concat(" ",results.rows));
+        console.log(JSON.stringify(compacted, null, 2));
+        res.status(200).json(results.rows);
     })
 }
 
@@ -64,7 +66,8 @@ const getIgriceByReview = (req,res) => {
             "name": {"@id": "http://schema.org/review", "@type": "@id"}
           };
         const compacted = await jsonld.compact(doc, context);
-        res.status(200).json(JSON.stringify(compacted, null, 2).concat(" ",results.rows));
+        console.log(JSON.stringify(compacted, null, 2));
+        res.status(200).json(results.rows);
     })
 }
 
